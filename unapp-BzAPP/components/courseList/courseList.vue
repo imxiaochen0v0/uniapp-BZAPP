@@ -21,7 +21,7 @@ export default {
     methods: {
         tapVideo() {
             uni.navigateTo({
-                url: '/pages/course/video/video'
+                url: '/pages/course/video/video2'
             })
         }
     },

@@ -1,7 +1,7 @@
 <template>
     <view class="course_jieshao_box">
         <!-- <image src="" mode="widthFix" /> -->
-        <text class="text">404</text>
+        <video src="/static/video.mp4" autoplay loop></video>
     </view>
 </template>
 
@@ -28,15 +28,14 @@ export default {
     justify-content: center;
     width: 100%;
 
-    image {
-        width: 100%;
-    }
+    // image {
+    //     width: 100%;
+    // }
 
-    .text {
-        font-size: 100rpx;
-        font-weight: 700;
-        color: pink;
-        margin-top: 100rpx;
+    video {
+        width: 750rpx;
+        height: 560rpx;
+        margin-top: 20rpx;
     }
 }
 </style>

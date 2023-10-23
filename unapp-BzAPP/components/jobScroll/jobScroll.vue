@@ -9,7 +9,7 @@
 							<view class="icon iconfont" :class="item.icon"></view>
 						</view>
 						<view class="job_scroll_card_des">{{ item.text }}</view>
-						<view class="job_scroll_card_btn">免费试学</view>
+						<view class="job_scroll_card_btn" @tap="tapVideo">免费试学</view>
 					</view>
 				</view>
 			</view>
@@ -33,7 +33,11 @@ export default {
 		})
 	},
 	methods: {
-
+		tapVideo() {
+			uni.navigateTo({
+				url: "/pages/course/video/video3"
+			})
+		}
 	}
 }
 </script>

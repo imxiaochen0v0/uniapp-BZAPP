@@ -17,21 +17,21 @@
 		{
 			"path": "pages/tabBar/classify/classify",
 			"style": {
-				"navigationBarTitleText": "分类",
+				"navigationStyle": "custom",
 				"enablePullDownRefresh": true
 			}
 		},
 		{
 			"path": "pages/tabBar/study/study",
 			"style": {
-				"navigationBarTitleText": "学习",
+				"navigationStyle": "custom",
 				"enablePullDownRefresh": true
 			}
 		},
 		{
 			"path": "pages/tabBar/user/user",
 			"style": {
-				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom",
 				"enablePullDownRefresh": true
 			}
 		},
@@ -46,9 +46,19 @@
 		{
 			"path": "pages/course/video/video",
 			"style": {
-				"navigationBarTitleText": "播放视频",
-				"navigationBarTextStyle": "white",
-				"navigationBarBackgroundColor": "#FFC0CB"
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/course/video/video2",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/course/video/video3",
+			"style": {
+				"navigationStyle": "custom"
 			}
 		}
 	],

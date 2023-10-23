@@ -13,7 +13,7 @@
                         <view class="info_text1">{{ item.teacher_name }}{{ item.teacher_job }}</view>
                         <view>{{ item.limitNum }}人学过</view>
                     </view>
-                    <view class="free_card_info_btn" v-if="item.baoming == '立即学习'">{{ item.baoming }}</view>
+                    <view class="free_card_info_btn" v-if="item.baoming == '立即学习'" @tap="tapVideo">{{ item.baoming }}</view>
                     <view class="free_card_info_btn free_card_info_btn1" v-else>{{ item.baoming }}</view>
                 </view>
             </view>
@@ -28,6 +28,14 @@ export default {
         return {
             teaList: []
         }
+    },
+    methods: {
+        tapVideo() {
+            uni.navigateTo({
+                url: '/pages/course/video/video',
+            })
+        },
+
     },
     mounted() {
         uni.request({
