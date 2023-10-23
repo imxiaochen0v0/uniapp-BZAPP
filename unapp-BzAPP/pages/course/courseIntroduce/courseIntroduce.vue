@@ -16,8 +16,9 @@
 
       <view class="courseIntroduce_tab_box">
         <view class="courseIntroduce_tab_nav">
-          <view :class="{ btna: count === index }" v-for="(item, index) in items" :key="index" @tap="change(index)">{{ item
-          }}</view>
+          <view :class="{ btna: count === index }" v-for="(item, index) in items" :key="index" @tap="change(index)">
+            {{ item }}
+          </view>
         </view>
 
         <view class="courseIntroduce_tab_con">
@@ -39,6 +40,7 @@
 import CourseIntroduceData from '../../../components/courseIntroduceData/courseIntroduceData.vue'
 import CourseList from '../../../components/courseList/courseList.vue'
 import CourseDescribes from '../../../components/courseDescribes/courseDescribes.vue'
+
 export default {
   data() {
     return {
@@ -78,7 +80,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .courseIntroduce_box {
   display: flex;
   box-sizing: box;
