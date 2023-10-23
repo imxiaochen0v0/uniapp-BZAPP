@@ -1,7 +1,9 @@
 <template>
   <view class="home">
 
+
     <NavBar />
+
 
     <view class="index_banner_box">
       <swiper class="swiper" indicator-dots :autoplay="true" circular interval="3000" duration="500">
@@ -11,11 +13,14 @@
       </swiper>
     </view>
 
+
     <CourseNav />
+
 
     <view class="online_box">
       <image :src="index_banner.img_url" class="online_img" mode="widthFix" />
     </view>
+
 
     <view class="free_box">
       <view class="free_T_box public_tow_box">
@@ -24,12 +29,14 @@
       <FreeCard />
     </view>
 
+
     <view class="title_box">
       <view class="title_T_box public_tow_box">
         <view class="public_T">零基础就业班</view>
       </view>
       <JobScroll />
     </view>
+
 
     <view class="recommend_box">
       <view class="recommend_T_box public_tow_box">
@@ -38,11 +45,12 @@
       <CourseCard />
     </view>
 
+
     <view class="daotu_box">
       <view class="daotu_T">驱动教学—贯穿教 | 学 | 练 | 测 | 评</view>
       <image :src="foot_banner.img_url" mode="widthFix" />
-
     </view>
+
 
   </view>
 </template>

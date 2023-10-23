@@ -1,21 +1,25 @@
 <template>
   <view class="home">
 
+
     <view class="courseIntroduce_box">
       <view class="courseIntroduce_des">
         <view class="courseIntroduce_info">{{ introduce }}</view>
       </view>
 
+
       <CourseIntroduceData :msg="introduceList" />
+
 
       <view class="question_line"></view>
 
+
       <view class="courseIntroduce_tab_box">
         <view class="courseIntroduce_tab_nav">
-          <view :class="{ btna: count === index }" v-for="(item, index) in items" :key="index" @tap="change(index)">{{
-            item }}
-          </view>
+          <view :class="{ btna: count === index }" v-for="(item, index) in items" :key="index" @tap="change(index)">{{ item
+          }}</view>
         </view>
+
         <view class="courseIntroduce_tab_con">
           <view class="discount_info" :class="{ dis: count === 0 }">
             <CourseList :videoList="Clist" />
@@ -26,6 +30,7 @@
         </view>
       </view>
     </view>
+
 
   </view>
 </template>
