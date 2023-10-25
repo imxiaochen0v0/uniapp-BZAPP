@@ -6,7 +6,7 @@
 
 
         <view class="index_banner_box">
-            <swiper class="swiper" indicator-dots :autoplay="true" circular interval="3000" duration="500">
+            <swiper class="swiper" indicator-dots autoplay circular interval="3000" duration="500">
                 <swiper-item v-for="(item, index) in topBanner" :key="index">
                     <image class="banner" :src="item.img_url" mode="" />
                 </swiper-item>
@@ -70,9 +70,11 @@ export default {
             foot_banner: ""
         }
     },
+
     methods: {
 
     },
+
     mounted() {
         uni.request({
             url: 'http://html5.bjsxt.cn/api/index/banner',
@@ -83,6 +85,7 @@ export default {
             },
         })
     },
+
     // 监听下拉刷新
     onPullDownRefresh() {
         uni.switchTab({
@@ -91,6 +94,7 @@ export default {
 
         uni.stopPullDownRefresh()
     },
+
     components: {
         NavBar,
         CourseNav,
@@ -101,7 +105,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .home {
     display: flex;
     flex-direction: column;
