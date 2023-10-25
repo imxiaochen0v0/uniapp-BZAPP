@@ -11,7 +11,7 @@
         </view>
 
     </view>
-</template>
+</template> 
 
 <script>
 export default {
